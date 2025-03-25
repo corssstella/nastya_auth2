@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(#475B9C, #EDF8F1); 
+    background-color: #a9a9a933;   
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 16px;
+}
+.auto-text{
+    font-weight: bold;
+    padding-top: 10px;
+    height: 40px;
+    font-size: 25px;
+}
+.input-area{
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    height: 34px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.input_area-text{
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-bottom: 3px;
+    color: rgb(103, 103, 103);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.input-area:focus{
+    border: none;
+    outline: none;
+}
+
+.login_input-container{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 194, 194);
+}
+.password_input-container{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 194, 194);
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+.input-container{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_auth-button{
+    padding-top: 10px;
+}
+
+.auth-button{
+    border: none;
+    background-color: #596ec1;
+    color: white;
+    border-radius: 10px;
+    width: 139px; 
+    height: 58px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.auth-button:hover {
+    background-color: #94a5ea; 
+}
+
+.under_error{
+    color: rgb(255, 51, 51);
+    margin-top: 15px;
+    font-size: 13px;
+}
+.auth-error{
+    width: 320px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 14px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    opacity:0;
+    position: absolute;
+    top: 0;
+    color: white;
+}
