@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторизация</title>
-    <link rel="stylesheet" href="../public/style2.css">
+    <link rel="stylesheet" href="/style2.css">
 </head>
 <body>
     <div class="auth-error" id="auth-error_top">Вы неправильно ввели логин или пароль</div>
@@ -39,7 +39,11 @@
         <div class="main_auth-button">
             <button class="auth-button" id="auth-button_btn">Войти</button>
         </div>
+        <script async src="https://telegram.org/js/telegram-widget.js?22" 
+        data-telegram-login="AuthTestBotSt_bot" data-size="large" 
+        data-auth-url="http://test.ru/telegram" data-request-access="write">
+    </script>
     </form>
-    <script src="./script2.jss"></script>
+    <script src="/script2.js"></script>
 </body>
 </html>

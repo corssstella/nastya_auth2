@@ -8,16 +8,6 @@ console.log(login, password)
 
 let flag = true;
 
-let users = [
-    {
-        login: 'admin',
-        password: 'admin'
-    },
-    {
-        login: 'user',
-        password: 'user'
-    }
-]
 
 function error_windowVisible(){
     auth_error.innerText = 'Вы неправильно ввели логин или пароль'
@@ -102,6 +92,4 @@ function loginbtn(){
     }
 
     validate()
-
-
 }

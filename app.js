@@ -53,7 +53,6 @@ app.get('/auth', (req, res) => {
     res.statusCode = 401;
     res.send("Неправильный логин или пароль");
   }
-  //const sessionKey = randomUUID();
   const token = jwt.sign(findedUser, SECRET);
   console.log(token);
   session.push(token);
@@ -67,6 +66,11 @@ app.get('/auth', (req, res) => {
 
 
 })
+app.get("/telegram", (req, res) => {
+  const userData = req.query;
+  console.log(userData);
+  res.send("OK");
+});
 
 app.get('/staff', (req, res) => {
   const token = req.cookies.session;
@@ -118,14 +122,7 @@ app.get('/', (req, res) => {
   res.sendFile('autorization.html',  {root: "pages"});
 })
 
-app.get('/second', (req, res) => {
-  const sessionKey = req.cookies.session;
-  if(sessionKey === undefined){
-    res.statusCode = 403;
-    res.send("Доступ запрещен");
-  }
-  res.sendFile('second_page.html',  {root: "pages"});
-})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
